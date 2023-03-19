@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+
+  &__link--hidden {
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: block;
+      margin: 0 0 0 24px;
+    }
+  }
+}
+
+
+

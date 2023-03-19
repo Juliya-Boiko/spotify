@@ -1,0 +1,20 @@
+.user {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    min-width: 177px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  &__avatar {
+    margin: 0 12px 0 0;
+    border-radius: 50%;
+  }
+
+  &__name {
+    @extend %header-typografy;
+  }
+}

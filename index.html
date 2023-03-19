@@ -8,24 +8,63 @@
   <title>INVO Academy JS Starter with Vite</title>
 </head>
 
-<!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
-
 <body>
-  <div id="home-page">
-    <div>
-      <img src="/public/images/javascript.svg" class="logo vanilla" alt="JavaScript logo" />
-      <h1>INVO Academy JS Starter with Vite</h1>
-      <p>
-        See the README.md for more information on how to start your challenge.
-      </p>
-      <div class="card">
-        <button id="counter" type="button"></button>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <nav class="nav">
+          <a href="/" class="nav__link">
+            <svg class="" width="18" height="18">
+              <use href="./src/images/symbol-defs.svg#icon-prev"></use>
+            </svg>
+          </a>
+          <a href="/" class="nav__link nav__link--hidden">
+            <svg class="" width="18" height="18">
+              <use href="./src/images/symbol-defs.svg#icon-next"></use>
+            </svg>
+          </a>
+        </nav>
+        <div class="user">
+          <img src="./src/images/user/default-avatar.png" alt="Avatar" class="user__avatar">
+          <p class="user__name">Julita Gomez</p>
+        </div>
       </div>
     </div>
-  </div>
+  </header>
 
-  <script type="module" src="/src/global-scripts/main.js"></script>
-  <script type="module" src="/src/pages/home-page/scripts/home-page.js"></script>
+  <main>
+    <section class="hero">
+      <div>
+        <p class="hero__text">Playlist</p>
+        <h1 class="hero__title">Top songs <br> of the world</h1>
+        <p class="hero__text hero__text--colored">Popular songs of Dua Lipa and many many others</p>
+      </div>
+    </section>
+
+    <section class="actions">
+      <div class="container">
+        <div class="actions__block">
+          <button type="button" class="actions__btn">
+            <svg class="actions__icon">
+              <use href="./src/images/symbol-defs.svg#icon-play"></use>
+            </svg>
+          </button>
+          <button type="button" class="actions__btn">
+            <svg class="actions__icon">
+              <use href="./src/images/symbol-defs.svg#icon-heart"></use>
+            </svg>
+          </button>
+          <button type="button" class="actions__btn">
+            <span class="actions__dot"></span><span class="actions__dot"></span><span class="actions__dot"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <div>list</div>
+  </main>
+
+  <footer>footer</footer>
+  <script type="module" src="/src/scripts/main.js"></script>
 </body>
 
 </html>
