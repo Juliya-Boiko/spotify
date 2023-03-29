@@ -13,12 +13,12 @@
     <div class="container">
       <div class="header__content">
         <nav class="nav">
-          <a href="/" class="nav__link">
+          <a href="#" class="nav__link">
             <svg class="" width="18" height="18">
               <use href="./src/images/symbol-defs.svg#icon-prev"></use>
             </svg>
           </a>
-          <a href="/" class="nav__link nav__link--hidden">
+          <a href="#" class="nav__link nav__link--hidden">
             <svg class="" width="18" height="18">
               <use href="./src/images/symbol-defs.svg#icon-next"></use>
             </svg>
@@ -27,6 +27,7 @@
         <div class="user">
           <img src="./src/images/user/default-avatar.png" alt="Avatar" class="user__avatar">
           <p class="user__name">Julita Gomez</p>
+          <div class="user__modal">Julita Gomez</div>
         </div>
       </div>
     </div>
@@ -59,11 +60,60 @@
           </button>
         </div>
       </div>
+      
     </section>
-    <div>list</div>
+
+    <section>
+      <div class="container">
+        <!-- <ul id="list"></ul> -->
+      </div>
+    </section>
   </main>
 
-  <footer>footer</footer>
+  <div class="tabbar">
+    <nav class="tabbar__nav">
+      <ul class="tabbar__nav-list">
+        <li class="tabbar__nav-item">
+          <a href="#" class="tabbar__nav-link">
+            <svg class="tabbar__nav-icon">
+              <use href="./src/images/symbol-defs.svg#icon-home-outlined"></use>
+            </svg>
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="tabbar__nav-item">
+          <a href="#" class="tabbar__nav-link">
+            <svg class="tabbar__nav-icon">
+              <use href="./src/images/symbol-defs.svg#icon-compass"></use>
+            </svg>
+            <span>Search</span>
+          </a>
+        </li>
+        <li class="tabbar__nav-item">
+          <a href="#" class="tabbar__nav-link">
+            <svg class="tabbar__nav-icon">
+              <use href="./src/images/symbol-defs.svg#icon-lib"></use>
+            </svg>
+            <span>Library</span>
+          </a>
+        </li>
+        <li class="tabbar__nav-item">
+          <a href="#" class="tabbar__nav-link">
+            <svg class="tabbar__nav-icon">
+              <use href="./src/images/symbol-defs.svg#icon-heart"></use>
+            </svg>
+            <span>Liked songs</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <footer class="footer">
+    <ul id="socials-list" class="socials-list">
+
+    </ul>
+  </footer>
   <script type="module" src="/src/scripts/main.js"></script>
 </body>
 

@@ -1,5 +1,6 @@
 .user {
   display: none;
+  position: relative;
   @media screen and (min-width: $desktop) {
     min-width: 177px;
     display: flex;
@@ -7,6 +8,11 @@
     padding: 3px;
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.7);
+  }
+  &:hover {
+    .user__modal {
+      display: block;
+    }
   }
 
   &__avatar {
@@ -16,5 +22,15 @@
 
   &__name {
     @extend %header-typografy;
+  }
+
+  &__modal {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.7);
   }
 }
